@@ -1,0 +1,15 @@
+name: python execution
+on: push
+
+jobs:
+  python_execution:
+    runs-on: ubuntu_latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: python_setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: run python file
+        run: python script.py
