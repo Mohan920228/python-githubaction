@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   python_execution:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v5
