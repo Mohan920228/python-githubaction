@@ -12,4 +12,4 @@ jobs:
         with:
           python-version: "3.11"
       - name: run python file
-        run: python script.py
+        run: python script.py 5
